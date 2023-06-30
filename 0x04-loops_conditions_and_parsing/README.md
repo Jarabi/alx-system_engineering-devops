@@ -1,5 +1,5 @@
 # 0x04. Loops, conditions and parsing
-DevOps | Shell | Bash | Scripting
+<kbd>DevOps</kbd> <kbd>Shell</kbd> <kbd>Bash</kbd> <kbd>Scripting</kbd>
 
 ## Resources
 ### Read/watch
@@ -10,12 +10,12 @@ DevOps | Shell | Bash | Scripting
 * [Make your scripts portable](https://intranet.alxswe.com/rltoken/O0Ay21p7tDhfLMsYbtAKug)
 
 ### man or help:
-* `env
-* cut
-* for
-* while
-* until
-* if`
+* `env`
+* `cut`
+* `for`
+* `while`
+* `until`
+* `if`
 
 ## General
 * How to create SSH keys
