@@ -24,3 +24,14 @@
 * How to use if, `else`, `elif` and `case` condition statements
 * How to use the `cut` command?
 * What are files and other comparison operators, and how to use them?
+
+## Requirements
+> Allowed editors: `vi`, `vim`, `emacs`
+> Files will be interpreted on Ubuntu 20.04 LTS
+> Files should end with a new line
+> A `README.md` file at the root of the folder of the project
+> Bash script files must be executable
+> Not allowed to use `awk`
+> Bash script must pass `Shellcheck` (version `0.7.0`) without any error
+> The first line of all Bash scripts should be exactly `#!/usr/bin/env bash`
+> The second line of all Bash scripts should be a comment explaining what is the script doing
