@@ -43,14 +43,14 @@ A wide area network span a larger physical distance. A WAN is a geographically-d
 
 ### The Internet
 The internet is the global system of interconnected computer networks that uses the Internet protocol suite to communicate between networks and devices.
-* IP Addresses
-Every machine on the the Internet has a unique number assigned to it, called an IP address.  There are two types of IP addresses: **public** and **private** IP addresses. A public IP address is an IP address that can be accessed over the Internet. It is a globally unique IP address assigned to a computing device. A Private IP address, on the other hand, is used to assign computers within your private space without letting them directly expose to the Internet.
-* Localhost
+* What is an IP Address?
+> Every machine on the the Internet has a unique number assigned to it, called an IP address.  There are two types of IP addresses: **public** and **private** IP addresses. A public IP address is an IP address that can be accessed over the Internet. It is a globally unique IP address assigned to a computing device. A Private IP address, on the other hand, is used to assign computers within your private space without letting them directly expose to the Internet.
+* What is Localhost?
 In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
 * What is a subnet?
-A subnet is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called *subnetting*.
+> A subnet is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called *subnetting*.
 * Why was IPv6 created?
-IPv6 (Internet Protocol Version 6) or IPng (Internet Protocol next generation) was deployed to fulfil the need for more internet addresses. IPv6 as born out of concern that the demand for IP addresses would exceed the available supply.
+> IPv6 (Internet Protocol Version 6) or IPng (Internet Protocol next generation) was deployed to fulfil the need for more internet addresses. IPv6 as born out of concern that the demand for IP addresses would exceed the available supply.
 
 ### TCP/UDP
 * TCP and UDP are the 2 mainly used data transfer protocols for IP.
