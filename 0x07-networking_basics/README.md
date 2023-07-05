@@ -24,34 +24,33 @@
 
 ## General
 ### OSI Model
-> The *Open Systems Interconnect model* is a conceptual model from the **International Organization for Standardization** (ISO) the "provides a common basis for the coordination of standards development for the purpose of systems interconnection.
+The *Open Systems Interconnect model* is a conceptual model from the **International Organization for Standardization** (ISO) the "provides a common basis for the coordination of standards development for the purpose of systems interconnection.
 
-> The model partitions the flow of data in a communication system into seven abstraction layers to describe networked communication:
-> 7. Application layer
-> 6. Presentation layer
-> 5. Session layer
-> 4. Transport layer
-> 3. Network layer
-> 2. Data link layer
-> 1. Pysical layer
+The model partitions the flow of data in a communication system into seven abstraction layers to describe networked communication:
+* Physical layer
+* Data link layer
+* Network layer
+* Transport layer
+* Session layer
+* Presentation layer
+* Application layer
 
 ### LAN
-> A local area network connects devices over a relatively short distance. LANs are typically used within a networked office building, school or home, but can occasionally span a group of nearby buildings. LANs are often implemented as a single IP subnet.
+A local area network connects devices over a relatively short distance. LANs are typically used within a networked office building, school or home, but can occasionally span a group of nearby buildings. LANs are often implemented as a single IP subnet.
 
 ### WAN
-> A wide area network span a larger physical distance. A WAN is a geographically-dispersed collection of LANs. A router connects LANs to a WAN.
+A wide area network span a larger physical distance. A WAN is a geographically-dispersed collection of LANs. A router connects LANs to a WAN.
 
 ### The Internet
-> The internet is the global system of interconnected computer networks that uses the Internet protocol suite to communicate between networks and devices.
+The internet is the global system of interconnected computer networks that uses the Internet protocol suite to communicate between networks and devices.
 * IP Addresses
-> Every machine on the the Internet has a unique number assigned to it, called an IP address.
-> There are two types of IP addresses: **public** and **private** IP addresses. A public IP address is an IP address that can be accessed over the Internet. It is a globally unique IP address assigned to a computing device. A Private IP address, on the other hand, is used to assign computers within your private space without letting them directly expose to the Internet.
+Every machine on the the Internet has a unique number assigned to it, called an IP address.  There are two types of IP addresses: **public** and **private** IP addresses. A public IP address is an IP address that can be accessed over the Internet. It is a globally unique IP address assigned to a computing device. A Private IP address, on the other hand, is used to assign computers within your private space without letting them directly expose to the Internet.
 * Localhost
-> In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
+In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
 * What is a subnet?
-> A subnet is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called *subnetting*.
+A subnet is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called *subnetting*.
 * Why was IPv6 created?
-> IPv6 (Internet Protocol Version 6) or IPng (Internet Protocol next generation) was deployed to fulfil the need for more internet addresses. IPv6 as born out of concern that the demand for IP addresses would exceed the available supply.
+IPv6 (Internet Protocol Version 6) or IPng (Internet Protocol next generation) was deployed to fulfil the need for more internet addresses. IPv6 as born out of concern that the demand for IP addresses would exceed the available supply.
 
 ### TCP/UDP
 * TCP and UDP are the 2 mainly used data transfer protocols for IP.
