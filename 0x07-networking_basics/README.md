@@ -46,7 +46,7 @@ The internet is the global system of interconnected computer networks that uses 
 * What is an IP Address?
 > Every machine on the the Internet has a unique number assigned to it, called an IP address.  There are two types of IP addresses: **public** and **private** IP addresses. A public IP address is an IP address that can be accessed over the Internet. It is a globally unique IP address assigned to a computing device. A Private IP address, on the other hand, is used to assign computers within your private space without letting them directly expose to the Internet.
 * What is Localhost?
-In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
+> In computer networking, localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
 * What is a subnet?
 > A subnet is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called *subnetting*.
 * Why was IPv6 created?
