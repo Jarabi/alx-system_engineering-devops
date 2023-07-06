@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bash script that configures an Ubuntu server hosts file
+
+# Make copy of hosts file
+cp /etc/hosts hosts_copy
+
+# Update/append with new values
+sed -i 's/127.0.0.1/127.0.0.2/g' hosts_copy
+echo '8.8.8.8 facebook.com' >> hosts_copy
+
+# Update hosts file
+cp hosts_copy /etc/hosts
