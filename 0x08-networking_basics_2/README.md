@@ -1,32 +1,22 @@
 # 0x07. Networking basics #0
 <kbd>DevOps</kbd> <kbd>Network</kbd> <kbd>SysAdmin</kbd>
 
-## Resources
-### Read/watch
-* [What is localhost?](https://intranet.alxswe.com/rltoken/Odcc_tyAQlcANCCrtmxo6A)
-* [What is 0.0.0.0?](https://intranet.alxswe.com/rltoken/fUb9IpnxrNaddMljzwbhJQ)
-* [What is the hosts file?](https://intranet.alxswe.com/rltoken/4_MBpFTulKliFM69jCPzOQ)
-* [Netcat examples](https://intranet.alxswe.com/rltoken/OR0lOEwAw9I1Rj4aGp1Ljg)
+## Objectives
+* What is localhost/127.0.0.1?
+**localhost** is the name of the host on the current computer used to access it. In the IPv4 address scheme, *localhost* resolves to the IP address *127.0.0.1*
+---
+* What is 0.0.0.0?
+**0.0.0.0** may be used by a host as its own source address in IP when it has not yet been assigned an IP address.
+---
+* What is /etc/hosts?
+The hosts file (/etc/hosts) is a plain text that operating systems use to translate hostnames into IP addresses.
+---
+* How to display your machine’s active network interfaces?
+Running `ifconfig` on the terminal will display the status of currently active interfaces.
+---
 
-
-### man or help:
+## man or help:
 * `ifconfig`
 * `telnet`
 * `nc`
 * `cut`
-
-## General
-* What is localhost/127.0.0.1?
-* What is 0.0.0.0?
-* What is /etc/hosts?
-* How to display your machine’s active network interfaces?
-
-## Requirements
-* Allowed editors: `vi`, `vim`, `emacs`
-* Files will be interpreted on Ubuntu 20.04 LTS
-* Files should end with a new line
-* A `README.md` file at the root of the folder of the project
-* Bash script files must be executable
-* Bash script must pass `Shellcheck` (version `0.7.0` via `apt-get`) without any error
-* The first line of all Bash scripts should be exactly `#!/usr/bin/env bash`
-* The second line of all Bash scripts should be a comment explaining what is the script doing
