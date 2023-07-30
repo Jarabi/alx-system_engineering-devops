@@ -1,0 +1,16 @@
+2. Secured and monitored web infrastructure
+
+Additions
+---------
++ 3 firewalls: 1 at the edge of the organization for business-wide security, and two controlling what traffic hits the servers.
++ 1 SSL certificate for end-to-end ecnryption of data communication between user and FOOBAR.com
++ 3 Monitoring clients to monitor and optimize performance of the applications and services.
+
+To monitor web server QPS, these are the steps that can be followed:
+
+* Install monitoring agent of preferred monitoring solution on the web server
+* Enable QPS metrics on the web server to expose relevant metrics
+* Configure monitoring solution, including specifying server IP, ports and endpoints
+* You can also set up alerts for any approached or exceeded thresholds
+* Set up dahsboards for real-time data flow visualizion
+* Analysis of data to identify patterns, bottlenecks, so as to optimize web server configuration
