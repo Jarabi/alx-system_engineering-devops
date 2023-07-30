@@ -22,5 +22,3 @@ Design Flaws
 - As it is, there is only one web server, application server and database server, which can only handle up
   to a certain limit of requaets at a time. If user traffic increases beyond this critical limit, the servers
   will be overwhelmed.
-
-Diagram: https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x09-web_infrastructure_design/images/0-simple_web_stack.png
