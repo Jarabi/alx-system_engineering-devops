@@ -1,5 +1,7 @@
 0. Simple web stack
 
+Design: https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x09-web_infrastructure_design/images/0-simple_web_stack.png
+
 General
 -------
 + A server is a hardware device or software virtual environment running a server application that receives,
