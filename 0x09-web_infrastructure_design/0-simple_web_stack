@@ -5,13 +5,15 @@ Design: https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x09-w
 General
 -------
 + A server is a hardware device or software virtual environment running a server application that receives,
-  porcesses and serves client requests, stores data or helps with some specialized task.
+  porcesses and serves static content.
++ The application server computes dynamic web content as per user request.
 + A domain name is a user friendly address for identifying and accessing online website resources.
-+ The type of DNS record used for www.foobar.com is an A record.
++ The type of DNS record used for www.foobar.com is an A record. This serves to translate the domain name
+  into an IP address.
 + A web server receives web requests and serves web pages with the requested information.
 + A database serves as a store for data relevant to the organization. The database has the additional
   responsibility of organizing and fetching the data requested by user.
-+ The server uses HTTP (HyperText Transfer Protocol) to serve requsted pages back to the user.
++ The server is using TCP/IP to serve requsted pages back to the user over the network.
 
 Design Flaws
 ------------
