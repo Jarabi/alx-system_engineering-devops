@@ -1,0 +1,16 @@
+0. Simple web stack
+
+General
+-------
++ A server is a hardware device or software virtual environment running a server application that receives, porcesses and serves client requests, stores data or helps with some specialized task.
++ A domain name is a user friendly address for identifying and accessing online website resources.
++ The type of DNS record used for www.foobar.com is an A record.
++ A web server receives web requests and serves web pages with the requested information.
++ A database serves as a store for data relevant to the organization. The database has the additional responsibility of organizing and fetching the data requested by user.
++ The server uses HTTP (HyperText Transfer Protocol) to serve requsted pages back to the user.
+
+Design Flaws
+------------
+- The web server is the only server handling web requests. In case of failure, there is no fail over server to mitigate againt downtime. This is a single point of failure (SPOF)
+- FOOBAT.COM will, from time to time, need to deploy new code or post updates to existing code. The downtime required for this will mean that users will not be served in that maintenance window.
+- As it is, there is only one web server, application server and database server, which can only handle up to a certain limit of requaets at a time. If user traffic increases beyond this critical limit, the servers will be overwhelmed.
