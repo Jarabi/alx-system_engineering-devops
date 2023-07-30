@@ -1,0 +1,24 @@
+1. Distributed web infrastructure
+
+Additions:
+---------
+
++ Another server for redundancy/failover, in case the primary goes down. Both servers running Linux OS
++ A HAproxy load balancer to distribute traffic load using round robin algorithm. This algorithm builds
+  a queue and walks through it, sending one request to each server.
++ The load balancer is supporting an Active-Active deployment. Both servers are active and handle requests
+  concurrently for improved scalability and high availability. On the contrary, Active-passive deployments
+  one server active and the other(s) on standby so that if the active instance fails, an agent shuts down
+  the active instance completely and brings up the standby instance.
+* Database Primary-Replica (Master-Slave) cluster enables database administrators to replicate data stored
+  in more than one server simultaneously.
+* With reference to application servers, "primary" and "replica" nodes refer to different types of server
+  instances in clustered application environments. The primary node is the main server instance with the
+  authoritative data and application logic, where client requests are executed. The replica node is a secondary
+  instance in the cluster that replicates the data and app logic from the primary node for high availability
+  and fault tolerance.
+
+Infrastructure issues
+---------------------
+- No firewall implementation. The network is insecure and susceptible to rogue attacks.
+- There is no monitoring mechanism between the two servers, thus no failover strategy in case of outage
