@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-source ~/.bash_aliases
-
-git add "$1"
-git commit -m "$2"
-git push https://"$GIT_TOKEN"@github.com/Jarabi/alx-system_engineering-devops.git
