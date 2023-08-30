@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Installs nginx in web-01 server
+sudo apt update
+sudo apt install -y nginx
+text_404="Ceci n\'est pas une page"
+old="server_name _;"
+redirect="$old\n\tlocation \/redirect_me{\n\t\treturn 301 http:\/\/theuselessweb.com;\n\t}"
+not_found="$old\n\n\terror_page 404\t\t\/404.html;\n"
+sudo sed -i "s/$old/$redirect/" /etc/nginx/sites-available/default
+sudo sed -i "s/$old/$not_found/" /etc/nginx/sites-available/default
+sudo bash -c "echo $text_404 > /var/www/html/404.html"
+sudo service nginx restart
