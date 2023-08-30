@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installs nginx in web-01 server
+sudo apt update
+sudo apt install -y nginx
+old="server_name _;"
+new="server_name _;\n\tlocation \/redirect_me{\n\t\treturn 301 http:\/\/theuselessweb.com;\n\t}"
+sed -i "s/$old/$new/" /etc/nginx/sites-available/default
+sudo service nginx restart
