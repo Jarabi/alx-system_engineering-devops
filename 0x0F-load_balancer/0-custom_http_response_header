@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Configure web-02 to be identical to web-01
+sudo apt update
+sudo apt install -y nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
+old="location \/ {"
+comment="\# Custom HTTP response header"
+new="$old\n\t\t$comment\n\t\tadd_header X-Served-By $HOSTNAME;\n"
+sudo sed -i "s/$old/$new/" /etc/nginx/sites-available/default
+sudo service nginx restart
