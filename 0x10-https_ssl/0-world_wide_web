@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Displays a domain A record details. Accepts two arguments:
+# 1. Domain - string; domain name to audit; mandatory
+# 2. Subdomain - string; specific subdomain to audit; optional
+
+a_record_details()
+{
+	if [ "$#" -eq 2 ]
+	then
+		dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print "The subdomain '"$2"' is a " $4 " record and points to " $5}'
+	elif [ "$#" -eq 1 ]
+	then
+		subdomains=("www" "lb-01" "web-01" "web-02")
+
+		for sub in "${subdomains[@]}"; do
+			dig "$sub"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print "The subdomain '"$sub"' is a " $4 " record and points to " $5}'
+		done
+	fi
+}
+
+a_record_details $1 $2
