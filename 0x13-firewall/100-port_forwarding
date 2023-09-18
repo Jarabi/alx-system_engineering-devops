@@ -9,8 +9,10 @@
 #
 *nat
 :PREROUTING ACCEPT [0:0]
--A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
-COMMIT
+
+# Forward traffic from port 8080 to port 80
+-A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 127.0.0.1:80
+
 # Don't delete these required lines, otherwise there will be errors
 *filter
 :ufw-before-input - [0:0]
