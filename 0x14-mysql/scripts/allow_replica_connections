@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo ufw allow from <replica_ip> to any port 3306
