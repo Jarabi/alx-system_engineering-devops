@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Script to install MySQL on both your web-01 and web-02 servers
+# MySQL distribution must be 5.7.x
+
+# 1. Save signature key in your machine
+sudo apt-key add signature.key
+
+# 2. Add the apt repo
+sudo sh -c 'echo "deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7" >> /etc/apt/sources.list.d/mysql.list'
+
+# 3. Update apt
+sudo apt-get update
+
+# 4. Check your available versions
+sudo apt-cache policy mysql-server
+
+# mysql-server:
+# Installed: (none)
+# Candidate: 8.0.27-0ubuntu0.20.04.1
+# Version table:
+#    8.0.27-0ubuntu0.20.04.1 500
+#       500 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages
+#       500 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages
+#    8.0.19-0ubuntu5 500
+#       500 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages
+#    5.7.37-1ubuntu18.04 500
+#       500 http://repo.mysql.com/apt/ubuntu bionic/mysql-5.7 amd64 Packages
+
+# 5. Install mysql 5.7
+sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*

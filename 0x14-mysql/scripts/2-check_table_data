@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Password: projectcorrection280hbtn
+mysql -uholberton_user -p -e "use tyrell_corp; select * from nexus6"
