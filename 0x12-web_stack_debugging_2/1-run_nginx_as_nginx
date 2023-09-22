@@ -1,21 +1,18 @@
 #!/usr/bin/env bash
 # Fix container so that Nginx is running as the nginx user
 
-# Allow user nginx to run Nginx
-sudo chmod 644 /etc/nginx/nginx.conf
+# Ensure nginx is installed
+if ! command -v nginx &> /dev/null;
+then
+	sudo apt update
+	sudo apt install -y nginx
+fi
 
-# Run as the nginx user
-sudo -u nginx nginx
+# Run as nginx user
+sed -i "s/#user www-data;/user nginx;/" /etc/nginx/nginx.conf
 
-# Create an Nginx server block to listen on all active IPs on port 8080
-cat <<EOF > /etc/nginx/sites-available/default
-server {
-	listen 8080 default_server;
-	listen [::]:8080 default_server;
-	root /var/www/html;
-	index index.html index.htm;
-}
-EOF
+# Configure port 8080
+sed -i "s/80 default_server/8080 default_server/" /etc/nginx/sites-available/default
 
 # Reload Nginx to apply the changes
 sudo nginx -s reload
