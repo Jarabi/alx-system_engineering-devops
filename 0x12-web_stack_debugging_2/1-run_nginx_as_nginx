@@ -9,14 +9,16 @@ then
 fi
 
 # Run as nginx user
-chmod 644 /etc/nginx/nginx.conf
-sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+sudo sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
 
 # Configure port 8080
-sed -i "s/80 default_server/8080 default_server/" /etc/nginx/sites-available/default
+sudo sed -i "s/80 default_server/8080 default_server/" /etc/nginx/sites-available/default
+
+# Modify permissions
+sudo chmod 644 /etc/nginx/nginx.conf
 
 # Stop apache2 service
-pkill apache2
+sudo pkill -f apache2
 
 # Start nginx service as nginx user
-sudo -u nginx service nginx start
+sudo service nginx restart
