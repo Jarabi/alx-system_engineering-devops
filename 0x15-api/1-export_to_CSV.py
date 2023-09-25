@@ -21,7 +21,7 @@ if __name__ == "__main__":
     todo_data = requests.get(todo_api_url).json()
 
     with open(filename, mode='w', newline="") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
         for task in todo_data:
             completed = task['completed']
