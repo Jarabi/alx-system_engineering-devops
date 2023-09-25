@@ -1,6 +1,6 @@
 # 0x15. API
 
-<kbd>Python</kbd><kbd>Scripting</kbd><kbd>Back-end</kbd><kbd>API</kbd>
+<kbd>Python</kbd> <kbd>Scripting</kbd> <kbd>Back-end</kbd> <kbd>API</kbd>
 
 ## Background Context
 
