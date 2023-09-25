@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A Python script that exports data in CSV foramt """
+""" A Python script that exports data in JSON foramt """
 
 
 def export_to_json(emp_id, username, data):
@@ -15,7 +15,7 @@ def export_to_json(emp_id, username, data):
     json_file = f"{emp_id}.json"
     tasks = []
 
-    # Extract the reuired task details
+    # Extract the required task details
     for task in data:
         title = task['title']
         completed = task['completed']
