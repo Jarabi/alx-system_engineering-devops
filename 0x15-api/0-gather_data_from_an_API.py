@@ -4,8 +4,8 @@ and returns information about his/her TODO list progress. """
 
 
 if __name__ == "__main__":
-    from sys import argv
     import requests
+    from sys import argv
 
     emp_id = argv[1]
     emp_api_url = f"https://jsonplaceholder.typicode.com/users/{emp_id}"
