@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     # Get employee details
     employee_data = requests.get(employee_api_url)
-    employee_name = employee_data.json()["name"]
+    username = employee_data.json()["username"]
 
     # Get tasks for employee
     todo_data = requests.get(todo_api_url).json()
@@ -26,4 +26,4 @@ if __name__ == "__main__":
         for task in todo_data:
             completed = task['completed']
             title = task['title']
-            writer.writerow([employee_id, employee_name, completed, title])
+            writer.writerow([employee_id, username, completed, title])
