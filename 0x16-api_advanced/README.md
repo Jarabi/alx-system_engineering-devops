@@ -24,27 +24,11 @@ A function that queries the [Reddit API](https://intranet.alxswe.com/rltoken/b-4
 > Invalid subreddits may return a redirect to search results. Script does not follow redirects.
 
 ```bash
-$ cat 0-main.py
-#!/usr/bin/python3
-"""
-0-main
-"""
-import sys
-
-if __name__ == '__main__':
-    number_of_subscribers = __import__('0-subs').number_of_subscribers
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        print("{:d}".format(number_of_subscribers(sys.argv[1])))
-$
 $ python3 0-main.py programming
 756024
 $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
-
-> Script: 0-subs.py
 
 ### 1. Top Ten
 
