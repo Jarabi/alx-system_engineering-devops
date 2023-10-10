@@ -17,5 +17,5 @@ def top_ten(subreddit):
         data = res.json()
         posts = data["data"]["children"][:10]
 
-        for index, post in enumerate(posts):
+        for index, post in enumerate(posts, start=1):
             print(post["data"]["title"])
