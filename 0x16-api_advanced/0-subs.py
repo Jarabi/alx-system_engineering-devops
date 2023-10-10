@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import requests
+""" Returns the number of
+    subscribers for a given subreddit """
 
 
 def number_of_subscribers(subreddit):
