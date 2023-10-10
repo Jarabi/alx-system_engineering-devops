@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-""" Returns a list containing the titles of all
-    hot articles for a given subreddit """
+""" Prints a sorted count of given keywords """
 import requests
 after = None
 
 
-def recurse(subreddit, hot_list=[]):
-    """ Recursively queries the Reddit API and
-        returns a list containing the titles of
-        all hot articles for a given subreddit """
+def count_words(subreddit, word_list):
+    """ Recursively queries the Reddit API, parses the title of all
+        hot articles, and prints a sorted count of given keywords
+        (case-insensitive, delimited by spaces) """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     headers = {'User-Agent': 'alex-jarabi'}
     global after
@@ -23,11 +22,11 @@ def recurse(subreddit, hot_list=[]):
 
     for post in posts:
         title = post.get('data', {}).get('title')
-        hot_list.append(title)
+        word_list.append(title)
 
     after = data.get('after')
 
     if after is None:
-        return hot_list
+        return word_list
 
-    return recurse(subreddit, hot_list)
+    return count_words(subreddit, word_list)
