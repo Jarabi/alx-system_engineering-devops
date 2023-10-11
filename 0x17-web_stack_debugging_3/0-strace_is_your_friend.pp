@@ -1,10 +1,6 @@
 # Fix apache 500 error
 
-$file        = '/var/www/html/wp-settings.php',
-$pattern     = '.phpp',
-$replacement = '.php'
-
-exec {'fix_apache':
-  command => "/bin/sed -i \"s/${pattern}/${replacement}/\" ${file}",
+exec {'fix_apache_500':
+  command => "sed -i 's/.phpp/.php/' /var/www/html/wp-settings.php",
   path    => '/bin:/usr/bin',
 }
