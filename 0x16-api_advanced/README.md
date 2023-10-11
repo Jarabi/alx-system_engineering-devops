@@ -29,7 +29,7 @@ $ python3 0-main.py programming
 $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
-Script: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)
+<small>Script: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)</small>
 ---
 
 ### 1. Top Ten
@@ -57,7 +57,7 @@ None
 $ 
 ```
 
-Script: [1-top_ten.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/1-top_ten.py)
+<small>Script: [1-top_ten.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/1-top_ten.py)</small>
 ---
 
 ### 2. Recurse it!
@@ -74,7 +74,7 @@ $ python3 2-main.py this_is_a_fake_subreddit
 None
 ```
 
-Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)
+<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
 ---
 
 ### 3. Count it!
@@ -97,4 +97,4 @@ $ python3 100-main.py not_a_valid_subreddit 'python java'
 $
 ```
 
-Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)
+<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
