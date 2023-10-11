@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+DD_SITE="datadoghq.com" DD_API_KEY="206496d7c256cf946f9661956c038fca" DD_APP_KEY="5192d32f376fab8b39934df2e3ec0b63c6f8c907" python3 "example.py"

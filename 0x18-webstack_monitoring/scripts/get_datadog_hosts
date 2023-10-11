@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Get hosts configured in datadog service
+
+DD_API_KEY='206496d7c256cf946f9661956c038fca'
+DD_APP_KEY='5192d32f376fab8b39934df2e3ec0b63c6f8c907'
+
+curl -X GET "https://api.datadoghq.com/api/v1/hosts" \
+-H "Accept: application/json" \
+-H "DD-API-KEY: ${DD_API_KEY}" \
+-H "DD-APPLICATION-KEY: ${DD_APP_KEY}"
+
