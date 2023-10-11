@@ -29,6 +29,7 @@ $ python3 0-main.py programming
 $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
+#### File: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)
 
 ### 1. Top Ten
 
@@ -38,20 +39,6 @@ A function that queries the [Reddit API](https://intranet.alxswe.com/rltoken/b-4
 > Invalid subreddits may return a redirect to search results. Script does not follow redirects.
 
 ```bash
-$ cat 1-main.py
-#!/usr/bin/python3
-"""
-1-main
-"""
-import sys
-
-if __name__ == '__main__':
-    top_ten = __import__('1-top_ten').top_ten
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        top_ten(sys.argv[1])
-$
 $ python3 1-main.py programming
 Firebase founder's response to last week's "Firebase Costs increased by 7000%!"
 How a 64k intro is made
