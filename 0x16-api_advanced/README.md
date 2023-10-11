@@ -29,7 +29,8 @@ $ python3 0-main.py programming
 $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
-#### File: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)
+Script: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)
+---
 
 ### 1. Top Ten
 
@@ -56,7 +57,8 @@ None
 $ 
 ```
 
-> Script: 1-top_ten.py
+Script: [1-top_ten.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/1-top_ten.py)
+---
 
 ### 2. Recurse it!
 
@@ -66,28 +68,33 @@ A recursive function that queries the [Reddit API](https://intranet.alxswe.com/r
 > Invalid subreddits may return a redirect to search results. Script does not follow redirects.
 
 ```bash
-$ cat 2-main.py
-#!/usr/bin/python3
-"""
-2-main
-"""
-import sys
-
-if __name__ == '__main__':
-    recurse = __import__('2-recurse').recurse
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        result = recurse(sys.argv[1])
-        if result is not None:
-            print(len(result))
-        else:
-            print("None")
-$
 $ python3 2-main.py programming
 932
 $ python3 2-main.py this_is_a_fake_subreddit
 None
 ```
 
-> Script: 2-recurse.py
+Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)
+---
+
+### 3. Count it!
+
+A recursive function that queries the Reddit API, parses the title of all hot articles, and prints a sorted count of given keywords. If no posts match or the subreddit is invalid, it prints nothing.
+
+Results are printed in descending order, by the count, and if the count is the same for separate keywords, they are then sorted alphabetically (A to Z). Words with no matches are skipped and not printed. Words are printed in lowercase.
+
+```bash
+$ python3 100-main.py programming 'react python java javascript scala no_results_for_this_one'
+java: 27
+javascript: 20
+python: 17
+react: 17
+scala: 4
+$ python3 100-main.py programming 'JavA java'
+java: 54
+$ python3 100-main.py not_a_valid_subreddit 'python java javascript scala no_results_for_this_one'
+$ python3 100-main.py not_a_valid_subreddit 'python java'
+$
+```
+
+Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)
