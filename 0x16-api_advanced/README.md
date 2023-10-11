@@ -18,6 +18,8 @@ A great API to use for some practice is the [Reddit API](https://intranet.alxswe
 
 ### 0. How many subscribers?
 
+<small>Script: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)</small>
+
 A function that queries the [Reddit API](https://intranet.alxswe.com/rltoken/b-4nD6hwEeNYTwYl5yWNwA) and returns the number of subscribers (not active users, total subscribers) for a given subreddit. If an invalid subreddit is given, the function returns 0.
 
 > [!NOTE]
@@ -29,10 +31,10 @@ $ python3 0-main.py programming
 $ python3 0-main.py this_is_a_fake_subreddit
 0
 ```
-<small>Script: [0-subs.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/0-subs.py)</small>
----
 
 ### 1. Top Ten
+
+<small>Script: [1-top_ten.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/1-top_ten.py)</small>
 
 A function that queries the [Reddit API](https://intranet.alxswe.com/rltoken/b-4nD6hwEeNYTwYl5yWNwA) and prints the titles of the first 10 hot posts listed for a given subreddit. If not a valid subreddit, the function prints None.
 
@@ -57,10 +59,9 @@ None
 $ 
 ```
 
-<small>Script: [1-top_ten.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/1-top_ten.py)</small>
----
-
 ### 2. Recurse it!
+
+<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
 
 A recursive function that queries the [Reddit API](https://intranet.alxswe.com/rltoken/b-4nD6hwEeNYTwYl5yWNwA) and returns a list containing the titles of all hot articles for a given subreddit. If no results are found for the given subreddit, the function returns None.
 
@@ -74,10 +75,8 @@ $ python3 2-main.py this_is_a_fake_subreddit
 None
 ```
 
-<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
----
-
 ### 3. Count it!
+<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
 
 A recursive function that queries the Reddit API, parses the title of all hot articles, and prints a sorted count of given keywords. If no posts match or the subreddit is invalid, it prints nothing.
 
@@ -96,5 +95,3 @@ $ python3 100-main.py not_a_valid_subreddit 'python java javascript scala no_res
 $ python3 100-main.py not_a_valid_subreddit 'python java'
 $
 ```
-
-<small>Script: [2-recurse.py](https://github.com/Jarabi/alx-system_engineering-devops/blob/main/0x16-api_advanced/2-recurse.py)</small>
