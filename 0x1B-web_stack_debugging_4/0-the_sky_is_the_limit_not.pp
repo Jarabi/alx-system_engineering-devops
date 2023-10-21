@@ -1,11 +1,11 @@
 # Manifest to increate limit of files open for Nginx service
 
-exec {'/etc/default/nginx':
-  command => 'sed -i "s/-n 15/-n unlimited/" /etc/default/nginx/',
-  path    => '/bin:/usr/bin',
+exec {'raise-nginx-limit':
+  command => 'sed -i "s/15/4096/" /etc/default/nginx/',
+  path    => '/usr/local/bin:/bin/'
 }
 
-exec {'restart_nginx':
-  command => 'sudo service nginx restart',
-  path    => '/bin:/usr/bin',
+exec {'restart-nginx':
+  command => 'nginx restart',
+  path    => '/etc/init.d/'
 }
