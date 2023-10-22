@@ -1,0 +1,44 @@
+server {
+        listen 80;
+
+        server_name 54.237.77.75;
+
+        add_header X-Served-By 228023-web-01;
+
+        location ~ /airbnb-dynamic/number_odd_or_even/([0-9]+) {
+                proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /airbnb-onepage/ {
+                proxy_pass http://127.0.0.1:5000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+}
+
+server {
+        listen 80;
+
+        server_name 127.0.0.1;
+
+        add_header X-Served-By 228023-web-01;
+
+        location ~ /airbnb-dynamic/number_odd_or_even/([0-9]+) {
+                proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+
+        location /airbnb-onepage/ {
+                proxy_pass http://127.0.0.1:5000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+}
