@@ -8,14 +8,14 @@ package { 'nginx':
 # Raise limit for number of files nginx can open
 exec { 'raise-ulimit':
   command => 'sed -i "s/15/4096/" /etc/default/nginx',
-  path    => '/usr/local/bin:/bin/',
+  path    => ['/usr/local/bin', '/bin/'],
   require => Package['nginx'],
 } ->
 
 # Restart nginx
 exec { 'restart-nginx':
-  command     => 'nginx restart',
-  path        => '/etc/init.d/',
+  command     => 'service nginx restart',
+  path        => ['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/sbin', '/bin'],
   refreshonly => true,
   subscribe   => Exec['raise-ulimit'],
 }
